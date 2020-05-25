@@ -1,6 +1,9 @@
 node ('master') {
-         stage('Test') {
-            sh 'echo bien'
+          
+         stage ('Build') {
+            steps {
+                sh 'mvn -U clean package  ' 
+            }
         }
  
 }
