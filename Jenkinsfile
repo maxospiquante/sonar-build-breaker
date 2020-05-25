@@ -19,7 +19,7 @@ node ('master') {
 	 stage('Code Quality') {
              
                 echo 'Checking Code Quality'
-                withSonarQubeEnv('ASF Sonar Analysis') {
+                withSonarQubeEnv('ASF') {
                     sh 'mvn   sonar:sonar'
                 }
            }
