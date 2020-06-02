@@ -13,7 +13,7 @@ node ('master') {
 	}
           
          stage ('Build') {
-           addInternalRouting('maxo')
+           addInternalRouting("maxo")
 
                 sh 'mvn -U clean package  ' 
             
