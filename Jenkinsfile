@@ -1,3 +1,5 @@
+@Library('mySharedLib')
+
 node ('master') {
           
 	 stage('Preparation') { // for display purposes
@@ -11,7 +13,8 @@ node ('master') {
 	}
           
          stage ('Build') {
-           
+           addInternalRouting('maxo')
+
                 sh 'mvn -U clean package  ' 
             
         }
